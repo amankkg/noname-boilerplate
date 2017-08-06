@@ -1,15 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26510.0
+VisualStudioVersion = 15.0.26730.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{41D15218-0304-4276-B57D-12CC273C706C}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "server.Api", "src\server.Api\server.Api.csproj", "{EB08A4A4-0E1C-4C24-9172-3DF39FF6F219}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "server.Utils", "src\server.Utils\server.Utils.csproj", "{1E9C84AA-29FF-415B-A4DD-CA3D92EE71EC}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "root", "root", "{8A4A9F2D-F2EF-4AF9-BB09-7A0F994A5BEB}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_root", "_root", "{8A4A9F2D-F2EF-4AF9-BB09-7A0F994A5BEB}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 		.gitattributes = .gitattributes
@@ -23,9 +17,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{7FA2A689-5
 		docs\README.md = docs\README.md
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{993F9A2C-E769-40D9-900C-DEE1A23F62DD}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{63671DBB-09F0-49FD-82AE-E359BCFDA06B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "server.Utils.Xunit", "test\server.Utils.Xunit\server.Utils.Xunit.csproj", "{68301038-F8F7-4140-903D-102941444BC8}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{D3FF84FD-14BB-414B-A30A-1F0F9D7AAD71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "server.WebApi", "src\server.WebApi\server.WebApi.csproj", "{1713C2FF-A560-4A95-9BFC-18B7FE7238B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "server.WebApi.Infrastructure", "src\server.WebApi.Infrastructure\server.WebApi.Infrastructure.csproj", "{0544DA20-19CD-4C81-85ED-46DD9E75521A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,25 +31,23 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{EB08A4A4-0E1C-4C24-9172-3DF39FF6F219}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EB08A4A4-0E1C-4C24-9172-3DF39FF6F219}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EB08A4A4-0E1C-4C24-9172-3DF39FF6F219}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EB08A4A4-0E1C-4C24-9172-3DF39FF6F219}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1E9C84AA-29FF-415B-A4DD-CA3D92EE71EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1E9C84AA-29FF-415B-A4DD-CA3D92EE71EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1E9C84AA-29FF-415B-A4DD-CA3D92EE71EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1E9C84AA-29FF-415B-A4DD-CA3D92EE71EC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{68301038-F8F7-4140-903D-102941444BC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{68301038-F8F7-4140-903D-102941444BC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{68301038-F8F7-4140-903D-102941444BC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{68301038-F8F7-4140-903D-102941444BC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1713C2FF-A560-4A95-9BFC-18B7FE7238B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1713C2FF-A560-4A95-9BFC-18B7FE7238B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1713C2FF-A560-4A95-9BFC-18B7FE7238B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1713C2FF-A560-4A95-9BFC-18B7FE7238B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0544DA20-19CD-4C81-85ED-46DD9E75521A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0544DA20-19CD-4C81-85ED-46DD9E75521A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0544DA20-19CD-4C81-85ED-46DD9E75521A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0544DA20-19CD-4C81-85ED-46DD9E75521A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{EB08A4A4-0E1C-4C24-9172-3DF39FF6F219} = {41D15218-0304-4276-B57D-12CC273C706C}
-		{1E9C84AA-29FF-415B-A4DD-CA3D92EE71EC} = {41D15218-0304-4276-B57D-12CC273C706C}
-		{68301038-F8F7-4140-903D-102941444BC8} = {993F9A2C-E769-40D9-900C-DEE1A23F62DD}
+		{1713C2FF-A560-4A95-9BFC-18B7FE7238B4} = {63671DBB-09F0-49FD-82AE-E359BCFDA06B}
+		{0544DA20-19CD-4C81-85ED-46DD9E75521A} = {63671DBB-09F0-49FD-82AE-E359BCFDA06B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {108AB766-EDEC-4753-87C0-AE86F3094495}
 	EndGlobalSection
 EndGlobal

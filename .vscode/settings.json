@@ -10,6 +10,12 @@
     "**/.vscode": true,
     "**/obj": true,
     "**/bin": true,
-    "**/Properties": true
+    "**/Properties": true,
+    "node_modules": true,
+    ".vs": true,
+    "*.sln.DotSettings": true,
+    "*.sln.DotSettings.user": true,
+    "package-lock.json": true,
+    "yarn.lock": true
   }
 }
