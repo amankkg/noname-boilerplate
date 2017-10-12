@@ -27,9 +27,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "server.WebApi.Infrastructur
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "server.WebApi.Infrastructure.Test", "test\server.WebApi.Infrastructure.Test\server.WebApi.Infrastructure.Test.csproj", "{8C5427E5-D5A7-4B5A-90FB-232B4C38370D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Brighter.WebApi", "Brighter.WebApi\Brighter.WebApi.csproj", "{7A6F9D37-1966-49CA-ABD5-CC75397B65DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Brighter.WebApi", "Brighter.WebApi\Brighter.WebApi.csproj", "{7A6F9D37-1966-49CA-ABD5-CC75397B65DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Brighter.Domain", "Brighter.Domain\Brighter.Domain.csproj", "{017F69F4-3D9C-4051-8C7D-64C3AFC82096}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Brighter.Domain", "Brighter.Domain\Brighter.Domain.csproj", "{017F69F4-3D9C-4051-8C7D-64C3AFC82096}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logging.Core", "Logging.Core\Logging.Core.csproj", "{29A1E0E3-A729-4D5F-A513-E16AE54002DC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{017F69F4-3D9C-4051-8C7D-64C3AFC82096}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{017F69F4-3D9C-4051-8C7D-64C3AFC82096}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{017F69F4-3D9C-4051-8C7D-64C3AFC82096}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29A1E0E3-A729-4D5F-A513-E16AE54002DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29A1E0E3-A729-4D5F-A513-E16AE54002DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29A1E0E3-A729-4D5F-A513-E16AE54002DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29A1E0E3-A729-4D5F-A513-E16AE54002DC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -67,6 +73,7 @@ Global
 		{8C5427E5-D5A7-4B5A-90FB-232B4C38370D} = {D3FF84FD-14BB-414B-A30A-1F0F9D7AAD71}
 		{7A6F9D37-1966-49CA-ABD5-CC75397B65DD} = {63671DBB-09F0-49FD-82AE-E359BCFDA06B}
 		{017F69F4-3D9C-4051-8C7D-64C3AFC82096} = {63671DBB-09F0-49FD-82AE-E359BCFDA06B}
+		{29A1E0E3-A729-4D5F-A513-E16AE54002DC} = {63671DBB-09F0-49FD-82AE-E359BCFDA06B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {108AB766-EDEC-4753-87C0-AE86F3094495}
