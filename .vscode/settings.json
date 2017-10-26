@@ -11,11 +11,14 @@
     "**/obj": true,
     "**/bin": true,
     "**/Properties": true,
-    "node_modules": true,
-    ".vs": true,
+    "**/node_modules": true,
+    "**/.idea": true,
     "*.sln.DotSettings": true,
     "*.sln.DotSettings.user": true,
+    ".vs": true,
     "package-lock.json": true,
-    "yarn.lock": true
-  }
+    "build": true
+  },
+  "javascript.validate.enable": false,
+  "typescript.validate.enable": false
 }
