@@ -1,5 +1,5 @@
-// Place your settings in this file to overwrite default and user settings.
 {
+  // Place your settings in this file to overwrite default and user settings.
   "files.exclude": {
     "**/.git": true,
     "**/.svn": true,
@@ -20,5 +20,10 @@
     "build": true
   },
   "javascript.validate.enable": false,
-  "typescript.validate.enable": false
+  "typescript.validate.enable": false,
+  "flow.useNPMPackagedFlow": true,
+  "editor.formatOnSave": true,
+  "javascript.format.enable": false,
+  "prettier.eslintIntegration": true,
+  "json.format.enable": false
 }

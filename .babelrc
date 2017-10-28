@@ -1,5 +1,16 @@
 {
-  "presets": [
-    "flow"
-  ]
+  "presets": [["env", { "useBuiltIns": "entry" }], "flow", "react"],
+  "plugins": [
+    "transform-async-generator-functions",
+    "transform-class-properties",
+    "transform-export-extensions"
+  ],
+  "env": {
+    "development": {
+      "plugins": ["flow-react-proptypes"]
+    },
+    "production": {},
+    "production-legacy": {}
+  },
+  "retainLines": true
 }

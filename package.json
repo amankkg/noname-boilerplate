@@ -1,32 +1,41 @@
 {
-  "name": "client",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "directories": {
-    "doc": "docs",
-    "test": "test"
-  },
   "scripts": {
     "build": "babel client/ -d build/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/amankkg/noname-boilerplate.git"
+  "dependencies": {
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/amankkg/noname-boilerplate/issues"
-  },
-  "homepage": "https://github.com/amankkg/noname-boilerplate#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.1",
     "babel-plugin-flow-react-proptypes": "^7.0.0",
+    "babel-plugin-module-resolver": "^2.7.1",
+    "babel-plugin-transform-async-generator-functions": "^6.24.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-export-extensions": "^6.22.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-flow": "^6.23.0",
     "babel-preset-react": "^6.24.1",
-    "flow-bin": "^0.57.3"
+    "browserslist": "^2.5.1",
+    "cross-env": "^5.1.1",
+    "eslint": "^4.10.0",
+    "eslint-import-resolver-babel-module": "^4.0.0-beta.3",
+    "eslint-plugin-babel": "^4.1.2",
+    "eslint-plugin-flowtype": "^2.39.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-react": "^7.4.0",
+    "flow-bin": "^0.57.3",
+    "npm-run-all": "^4.1.1"
+  },
+  "name": "noname-boilerplate",
+  "version": "0.0.1",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amankkg/noname-boilerplate.git"
   }
 }
