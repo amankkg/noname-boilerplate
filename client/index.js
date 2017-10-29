@@ -1,19 +1,42 @@
 // @flow
+import "babel-polyfill";
+import * as React from "react";
+import { render } from "react-dom";
 
-class Animal {}
+import type { AmbiguousText } from "./index.js.flow";
 
-class Dog extends Animal {
-  woof() {
-    console.log("woof");
+type Props = {
+  title: AmbiguousText
+};
+type State = {
+  value: AmbiguousText
+};
+
+class TextInput extends React.Component<Props, State> {
+  static defaultProps = {
+    title: "some description"
+  };
+
+  state = {
+    value: "42"
+  };
+
+  handleChange = (e: SyntheticEvent<HTMLInputElement>) => {
+    this.setState({ value: e.currentTarget.value });
+  };
+
+  render() {
+    return (
+      <input
+        value={this.state.value}
+        onChange={this.handleChange}
+        title={this.props.title}
+      />
+    );
   }
 }
 
-class Cat extends Animal {
-  meow() {
-    console.log("meow");
-  }
+const rootElement = document.getElementById("root");
+if (rootElement != null) {
+  render(<TextInput />, rootElement);
 }
-
-const dogs: Dog[] = [new Dog()];
-const animals: Animal[] = dogs;
-animals.push(new Cat());

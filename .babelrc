@@ -1,16 +1,74 @@
 {
-  "presets": [["env", { "useBuiltIns": "entry" }], "flow", "react"],
-  "plugins": [
-    "transform-async-generator-functions",
-    "transform-class-properties",
-    "transform-export-extensions"
-  ],
   "env": {
     "development": {
-      "plugins": ["flow-react-proptypes"]
+      "presets": [
+        [
+          "env",
+          {
+            "targets": {
+              "browsers": "last 2 Chrome versions"
+            },
+            "useBuiltIns": true,
+            "modules": false,
+            "debug": true
+          }
+        ],
+        "react"
+      ],
+      "plugins": [
+        "flow-react-proptypes",
+        "transform-async-generator-functions",
+        "transform-class-properties",
+        "transform-export-extensions"
+      ]
     },
-    "production": {},
-    "production-legacy": {}
+    "production": {
+      "presets": [
+        [
+          "env",
+          {
+            "targets": {
+              "browsers": "last 2 Chrome versions"
+            },
+            "useBuiltIns": true,
+            "modules": false,
+            "debug": true
+          }
+        ],
+        "react"
+      ],
+      "plugins": [
+        "transform-async-generator-functions",
+        "transform-class-properties",
+        "transform-export-extensions",
+        "transform-react-constant-elements",
+        "transform-react-inline-elements"
+      ]
+    },
+    "production-legacy": {
+      "presets": [
+        [
+          "env",
+          {
+            "targets": {
+              "browsers": ["> 1%", "last 2 versions", "IE 10"]
+            },
+            "useBuiltIns": true,
+            "modules": "commonjs",
+            "debug": true
+          }
+        ],
+        "react"
+      ],
+      "plugins": [
+        "transform-async-generator-functions",
+        "transform-class-properties",
+        "transform-export-extensions",
+        ["transform-object-rest-spread", { "useBuiltIns": true }],
+        "transform-react-constant-elements",
+        "transform-react-inline-elements"
+      ]
+    }
   },
   "retainLines": true
 }

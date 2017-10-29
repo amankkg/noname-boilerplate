@@ -17,6 +17,6 @@
       "onlyFilesWithAnnotation": true
     }
   },
-  "extends": ["eslint/recommended", "plugin:flowtype/recommended"],
-  "plugins": ["babel", "flowtype", "react"]
+  "extends": ["plugin:flowtype/recommended"],
+  "plugins": ["babel", "flowtype", "import", "react"]
 }
