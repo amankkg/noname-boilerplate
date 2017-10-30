@@ -18,11 +18,15 @@ class TextInput extends React.Component<Props, State> {
 
   render() {
     return (
-      <input
-        value={this.state.value}
-        onChange={this.handleChange}
-        title={this.props.title}
-      />
+      <label htmlFor="someId">
+        {this.props.title}
+        <input
+          id="someId"
+          value={this.state.value}
+          onChange={this.handleChange}
+          title={this.props.title}
+        />
+      </label>
     );
   }
 }
