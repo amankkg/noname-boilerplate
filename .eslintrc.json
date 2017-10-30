@@ -11,8 +11,8 @@
     "browser": true,
     "es6": true
   },
-  "plugins": ["babel", "flowtype", "import", "react"],
-  "extends": ["plugin:flowtype/recommended", "plugin:import/errors"],
+  "extends": ["airbnb", "plugin:flowtype/recommended"],
+  "plugins": ["babel", "flowtype", "compat"],
   "settings": {
     "flowtype": {
       "onlyFilesWithAnnotation": true
@@ -20,5 +20,11 @@
     "import/resolver": {
       "babel-module": {}
     }
+  },
+  "rules": {
+    "compat/compat": "error",
+    "react/jsx-filename-extension": ["error", { "extensions": [".js"] }],
+    "linebreak-style": "off",
+    "semi": ["error", "never"]
   }
 }

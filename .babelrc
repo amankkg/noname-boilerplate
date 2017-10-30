@@ -5,9 +5,7 @@
         [
           "env",
           {
-            "targets": {
-              "browsers": "last 2 Chrome versions"
-            },
+            "targets": { "browsers": "last 1 Chrome version" },
             "useBuiltIns": true,
             "modules": false
           }
@@ -16,10 +14,10 @@
       ],
       "plugins": [
         ["module-resolver", { "root": ["./client"] }],
-        "flow-react-proptypes",
         "transform-async-generator-functions",
         "transform-class-properties",
-        "transform-export-extensions"
+        "transform-export-extensions",
+        "flow-react-proptypes"
       ]
     },
     "production": {
@@ -27,9 +25,7 @@
         [
           "env",
           {
-            "targets": {
-              "browsers": "last 2 Chrome versions"
-            },
+            "targets": { "browsers": "last 2 versions" },
             "useBuiltIns": true,
             "modules": false
           }
@@ -50,9 +46,7 @@
         [
           "env",
           {
-            "targets": {
-              "browsers": ["> 1%", "last 2 versions", "IE 10"]
-            },
+            "targets": { "browsers": ["> 1%", "last 4 versions", "IE 10"] },
             "useBuiltIns": true,
             "modules": "commonjs"
           }

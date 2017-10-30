@@ -1,0 +1,10 @@
+[development]
+last 1 Chrome version
+
+[production]
+last 2 versions
+
+[production-legacy]
+> 1%
+last 4 versions
+IE 10

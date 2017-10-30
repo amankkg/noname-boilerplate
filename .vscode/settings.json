@@ -25,5 +25,6 @@
   "editor.formatOnSave": true,
   "javascript.format.enable": false,
   "json.format.enable": false,
-  "eslint.enable": true
+  "eslint.enable": true,
+  "prettier.eslintIntegration": true
 }
