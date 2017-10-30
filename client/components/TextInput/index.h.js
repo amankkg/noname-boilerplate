@@ -1,9 +1,9 @@
 // @flow
-type AmbiguousText = string | number;
+type AmbiguousText = string | number
 
 export type Props = {
-  title: AmbiguousText
-};
+  title: AmbiguousText,
+}
 export type State = {
-  value: AmbiguousText
-};
+  value: AmbiguousText,
+}
