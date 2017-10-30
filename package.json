@@ -2,9 +2,8 @@
   "scripts": {
     "build:dev": "cross-env NODE_ENV=development babel client/ -d build/dev/",
     "build:prod": "cross-env NODE_ENV=production babel client/ -d build/prod/",
-    "build:prod-legacy":
-      "cross-env NODE_ENV=production-legacy babel client/ -d build/prod-legacy/",
-    "build": "run-s build:dev build:prod build:prod-legacy",
+    "build:prod-legacy": "cross-env NODE_ENV=production-legacy babel client/ -d build/prod-legacy/",
+    "build": "run-p build:dev build:prod build:prod-legacy",
     "eslint": "eslint client",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,6 +18,7 @@
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.0.1",
     "babel-plugin-flow-react-proptypes": "^7.0.1",
+    "babel-plugin-module-resolver": "^3.0.0-beta.5",
     "babel-plugin-transform-async-generator-functions": "^6.24.1",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-export-extensions": "^6.22.0",
@@ -29,13 +29,13 @@
     "babel-preset-react": "^6.24.1",
     "cross-env": "^5.1.1",
     "eslint": "^4.10.0",
+    "eslint-import-resolver-babel-module": "^4.0.0-beta.3",
     "eslint-plugin-babel": "^4.1.2",
     "eslint-plugin-flowtype": "^2.39.1",
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-react": "^7.4.0",
     "flow-bin": "^0.57.3",
-    "npm-run-all": "^4.1.1",
-    "prettier-eslint": "^8.2.1"
+    "npm-run-all": "^4.1.1"
   },
   "name": "noname-boilerplate",
   "version": "0.0.1",

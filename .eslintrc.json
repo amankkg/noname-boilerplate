@@ -9,14 +9,16 @@
   },
   "env": {
     "browser": true,
-    "es6": true,
-    "jest": true
+    "es6": true
   },
+  "plugins": ["babel", "flowtype", "import", "react"],
+  "extends": ["plugin:flowtype/recommended", "plugin:import/errors"],
   "settings": {
     "flowtype": {
       "onlyFilesWithAnnotation": true
+    },
+    "import/resolver": {
+      "babel-module": {}
     }
-  },
-  "extends": ["plugin:flowtype/recommended"],
-  "plugins": ["babel", "flowtype", "import", "react"]
+  }
 }
