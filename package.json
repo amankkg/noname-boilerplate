@@ -1,11 +1,15 @@
 {
   "scripts": {
+    "precommit": "lint-staged",
     "build:dev": "cross-env NODE_ENV=development babel client/ -d build/dev/",
     "build:prod": "cross-env NODE_ENV=production babel client/ -d build/prod/",
     "build:prod-legacy": "cross-env NODE_ENV=production-legacy babel client/ -d build/prod-legacy/",
     "build": "run-p build:dev build:prod build:prod-legacy",
     "eslint": "eslint client",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "lint-staged": {
+    "*.{js,json}": ["prettier-eslint --parser flow --write", "git add"]
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
@@ -29,13 +33,20 @@
     "babel-preset-react": "^6.24.1",
     "cross-env": "^5.1.1",
     "eslint": "^4.10.0",
+    "eslint-config-airbnb": "^16.1.0",
     "eslint-import-resolver-babel-module": "^4.0.0-beta.3",
     "eslint-plugin-babel": "^4.1.2",
+    "eslint-plugin-compat": "^2.0.1",
     "eslint-plugin-flowtype": "^2.39.1",
     "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
     "eslint-plugin-react": "^7.4.0",
     "flow-bin": "^0.57.3",
-    "npm-run-all": "^4.1.1"
+    "husky": "^0.14.3",
+    "lint-staged": "^4.3.0",
+    "npm-run-all": "^4.1.1",
+    "prettier-eslint": "^8.2.1",
+    "prettier-eslint-cli": "^4.4.0"
   },
   "name": "noname-boilerplate",
   "version": "0.0.1",
