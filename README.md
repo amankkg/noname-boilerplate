@@ -5,9 +5,9 @@ some random thoughts expressed in client js and server asp.net app
 ## roadmap (not strict, in progress, to be sorted properly)
 
 ### client
-1. react & babel
-1. flow, with no prop-types (babel-plugin-flow-react-proptypes)
-1. eslint, prettier
+1. **+** react & babel
+1. **+** flow, with no prop-types (babel-plugin-flow-react-proptypes)
+1. **+** eslint, prettier, lint-staged
 1. jest
 1. code splitting and async loading (react-loadable, react-universal-component)
 1. router (redux-first-router)
@@ -33,10 +33,10 @@ some random thoughts expressed in client js and server asp.net app
 1. script to run whole app?
 1. browsersync
 1. Cake to build .NET code
-1. modern and transpiled client output (https://philipwalton.com/articles/deploying-es2015-code-in-production-today/)
+1. **+-** modern and legacy client bundles (https://philipwalton.com/articles/deploying-es2015-code-in-production-today/)  **_// browserslist and babel-preset-env only, no webpack yet_**
 1. webpack - babel might be enough?
 1. infrastructure testing?
-1. code de-face git hook (prettier, lint-staged, editorconfig)
+1. **+-** code de-face git hook (prettier, lint-staged, editorconfig) **_// precommit hook for *.{js,json}, no C# formatting yet_**
 
 ### other
 1. e2e tests (cypress, headless chrome)
