@@ -20,6 +20,27 @@
         "flow-react-proptypes"
       ]
     },
+    "test": {
+      "presets": [
+        [
+          "env",
+          {
+            "targets": { "node": "current" },
+            "useBuiltIns": true,
+            "ignoreBrowserslistConfig": true
+          }
+        ],
+        "react",
+        "jest"
+      ],
+      "plugins": [
+        ["module-resolver", { "root": ["./client"] }],
+        "transform-async-generator-functions",
+        "transform-class-properties",
+        "transform-export-extensions",
+        "flow-react-proptypes"
+      ]
+    },
     "production": {
       "presets": [
         [

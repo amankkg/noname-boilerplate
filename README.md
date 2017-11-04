@@ -17,8 +17,9 @@ some random thoughts expressed in client js and server asp.net app
 1. validation - schema? forms? runtime?
 1. logging - structured? sync actions? logux?
 1. webpack - babel might be enough?
+1. storybook, styleguidist - jest snapshots overlap?
 1. browsersync - separate npm script? with hot reload?
-1. hot reload - least priority
+1. hot reload - least priority!
 
 ### server
 1. editorconfig rules & lint-staged

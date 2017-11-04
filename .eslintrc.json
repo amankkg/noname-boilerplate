@@ -9,10 +9,12 @@
   },
   "env": {
     "browser": true,
-    "es6": true
+    "es6": true,
+    "jest": true,
+    "jest/globals": true
   },
-  "extends": ["airbnb", "plugin:flowtype/recommended"],
-  "plugins": ["babel", "flowtype", "compat"],
+  "extends": ["airbnb", "plugin:flowtype/recommended", "plugin:jest/recommended"],
+  "plugins": ["babel", "flowtype", "compat", "jest"],
   "settings": {
     "flowtype": {
       "onlyFilesWithAnnotation": true
