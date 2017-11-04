@@ -9,16 +9,16 @@ some random thoughts expressed in client js and server asp.net app
 1. **+** flow, with no prop-types (babel-plugin-flow-react-proptypes)
 1. **+** eslint, prettier, lint-staged
 1. **+-** modern and legacy client bundles (https://philipwalton.com/articles/deploying-es2015-code-in-production-today/)  **_no webpack yet_**
-1. webpack - babel might be enough?
 1. jest
 1. code splitting and async loading (react-loadable, react-universal-component)
 1. router (redux-first-router)
 1. side effects (redux-logic, redux-most)
 1. css-in-js (jss)
-1. runtime validation?
-1. hot reload?
-1. browsersync
-1. logging?
+1. validation - schema? forms? runtime?
+1. logging - structured? sync actions? logux?
+1. webpack - babel might be enough?
+1. browsersync - separate npm script? with hot reload?
+1. hot reload - least priority
 
 ### server
 1. editorconfig rules & lint-staged
