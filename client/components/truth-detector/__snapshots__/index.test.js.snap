@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should just pass 1`] = `
+<TruthDetector
+  value={0}
+/>
+`;
+
+exports[`should return \`Aye!\` if value is 42 1`] = `
+<TruthDetector
+  value={42}
+/>
+`;
+
+exports[`should return \`Naah!\` if value is not 42 1`] = `
+<TruthDetector
+  value={41}
+/>
+`;
