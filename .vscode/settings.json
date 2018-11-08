@@ -17,7 +17,8 @@
     "*.sln.DotSettings.user": true,
     ".vs": true,
     "package-lock.json": true,
-    "build": true
+    "build": true,
+    "yarn.lock": true
   },
   "javascript.validate.enable": false,
   "typescript.validate.enable": false,
